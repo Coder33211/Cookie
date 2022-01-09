@@ -2,7 +2,15 @@
 <html>
 <body>
 <script>
-alert("Testing");
+  function getCookie() {
+    let href = window.location.href;
+    
+    let cookie = href.slice(href.indexOf("?cookie=")+8)
+    
+    return cookie;
+  }
+  
+  alert(getCookie());
 </script>
 </body>
 </html>
